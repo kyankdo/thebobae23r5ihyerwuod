@@ -1,0 +1,78 @@
+* {
+	font-family: system-ui;	
+}
+
+body {
+	font-weight: bold;
+	display: grid;
+	min-height: 100vh;
+	margin: 0;
+	color: #ffffff;
+	-webkit-text-stroke: #000000 0.5px;
+	text-align: center;
+	place-items: center;
+	place-content: center;
+	align-content: baseline;
+	background: linear-gradient(180deg, #ffefcf, #ffdfbf);
+}
+
+div {
+	text-align: center;
+	place-items: center;
+	place-content: center;
+}
+
+button {
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 8px;
+	background: #ec3750;
+	border: 1px solid #000000;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+button:hover {
+	background: #50ec37;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	border: 2.5px solid #000000;
+	border-radius: 15px;
+}
+
+.separator {
+	width: 200%;
+	background-color: #00000040;
+	height: 2px;
+}
+
+.title {
+	background: linear-gradient(90deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f);
+	background-size: 200% 100%;
+	color: transparent;
+	background-clip: text;
+	animation: scroll 5s linear infinite;
+}
+
+@keyframes scroll {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 200% 50%;
+	}
+}
+
+.secret {
+	padding: 0.6rem 1.2rem;
+	font-size: 1rem;
+	font-weight: bold;
+	border-radius: 8px;
+	background: #ec3750;
+	border: 1px solid #000000;
+}
